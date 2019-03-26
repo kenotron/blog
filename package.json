@@ -26,12 +26,14 @@
     "dev": "gatsby develop",
     "lint": "eslint . --ext .js --cache",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "docker": "docker run -d --name blog -p 2368:2368 -v ~/OneDrive/blog:/var/lib/ghost/content ghost:2"
+    "docker": "docker run -d --name blog -p 2368:2368 -v ~/OneDrive/blog:/var/lib/ghost/content ghost:2",
+    "deploy": "gatsby build && gh-pages -d public -b master"
   },
   "devDependencies": {
     "eslint": "5.15.1",
     "eslint-plugin-ghost": "0.2.0",
-    "eslint-plugin-react": "7.12.4"
+    "eslint-plugin-react": "7.12.4",
+    "gh-pages": "^2.0.1"
   },
   "dependencies": {
     "@tryghost/helpers": "1.0.1",
