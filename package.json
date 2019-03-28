@@ -36,6 +36,9 @@
     "gh-pages": "^2.0.1"
   },
   "dependencies": {
+    "prismjs": "^1.16.0",
+    "babel-preset-gatsby": "^0.1.10",
+    "babel-plugin-prismjs": "^1.0.2",
     "@tryghost/helpers": "1.0.1",
     "@tryghost/helpers-gatsby": "1.0.1",
     "cheerio": "^1.0.0-rc.2",
